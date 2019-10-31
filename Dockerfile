@@ -4,6 +4,7 @@ MAINTAINER Pascal Patty <pascal.patty@asr.nl>
 # We installeren Python en PIP. PIP haalt Ansible en de basis modules op.
 RUN echo "Installing GCC, Python and GIT"
 RUN yum update -y -q && \
+    yum install epel-release \
     yum install -y \
         gcc \
         python \
