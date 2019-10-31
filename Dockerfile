@@ -6,10 +6,8 @@ RUN echo "Installing GCC, Python and GIT"
 RUN yum update -y -q && \
     yum install -y \
         gcc \
-        python36u \
-        python36u-libs \
-        python36u-devel \
-        python36u-pip \
+        python \
+        python-pip \
         git && \
     yum clean all
 
