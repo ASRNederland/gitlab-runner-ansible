@@ -16,5 +16,6 @@ RUN yum install -y \
 ARG ANSIBLE_VERSION=2.7.13
 RUN echo "Installing Ansible Version: ${ANSIBLE_VERSION}"
 RUN pip --version
+RUN pip install --upgrade setuptools
 RUN pip install ansible==$ANSIBLE_VERSION
 RUN pip install psutil gssapi ansible-lint
