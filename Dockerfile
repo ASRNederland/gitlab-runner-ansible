@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Pascal Patty <pascal.patty@asr.nl>
+LABEL maintainer="Pascal Patty <pascal.patty@asr.nl>"
 
 # We installeren Python en PIP. PIP haalt Ansible en de basis modules op.
 RUN echo "Updating and installing ius-release"
