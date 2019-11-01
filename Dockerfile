@@ -8,6 +8,9 @@ RUN yum update -y -q && \
 RUN echo "Installing GCC, Python and GIT"
 RUN yum install -y \
         gcc \
+        krb5-libs \
+        krb5-workstation \
+        krb5-devel \
         python \
         python-pip \
         git && \
