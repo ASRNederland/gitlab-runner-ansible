@@ -18,7 +18,7 @@ RUN yum install -y \
         git && \
     yum clean all
 
-RUN echo "Installing Ansible Version: 2.8"
+RUN echo "Installing Ansible Version: 2.9"
 RUN pip3 --version
 RUN pip3 install --upgrade setuptools
-RUN pip3 install psutil gssapi ansible==2.8 ansible-lint
+RUN pip3 install psutil gssapi ansible==2.9 ansible-lint
