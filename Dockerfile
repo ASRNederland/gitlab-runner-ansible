@@ -24,4 +24,4 @@ RUN yum install -y azure-cli && \
 RUN echo "Installing Ansible Version: 2.9.1"
 RUN pip3 --version
 RUN pip3 install --upgrade setuptools
-RUN pip3 install psutil gssapi ansible==2.9 ansible-lint ansible[azure]
+RUN pip3 install psutil gssapi ansible==2.9.1 ansible-lint ansible[azure]
