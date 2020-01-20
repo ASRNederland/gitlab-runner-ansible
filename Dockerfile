@@ -21,7 +21,7 @@ RUN sh -c 'echo -e "[azure-cli]\nname=Azure CLI\nbaseurl=https://packages.micros
 RUN yum install -y azure-cli && \
     yum clean all
 
-RUN echo "Installing Ansible Version: 2.9"
+RUN echo "Installing Ansible Version: 2.9.1"
 RUN pip3 --version
 RUN pip3 install --upgrade setuptools
 RUN pip3 install psutil gssapi ansible==2.9 ansible-lint ansible[azure]
